@@ -72,12 +72,12 @@
             padding-bottom: 30px;
             border-top: 1px solid $grey-color;
             .piedepagina__refresh{
-                font-family: poppins regular;
+                font-family: poppins;
                 font-size: $fontsize-m;
                 padding-top: 25px;
             }
             .piedepagina__terminos{
-                font-family: poppins Extralight;
+                font-family: poppins;
                 font-size: $fontsize-s;
                 padding-bottom: 25px;
             }
@@ -143,12 +143,12 @@
             border-top: 1px solid $grey-color;
             @include flex-colum-center;
             .piedepagina__refresh{
-                font-family: poppins regular;
+                font-family: poppins;
                 font-size: $fontsize-m;
                 padding-top: 25px;
             }
             .piedepagina__terminos{
-                font-family: poppins Extralight;
+                font-family: poppins;
                 font-size: $fontsize-s;
                 padding-bottom: 25px;
             }
