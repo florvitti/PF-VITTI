@@ -1,0 +1,119 @@
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .body__proyectos {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "proyectos__title"
+        "presentacion"
+        "trabajos"
+        "metodologia__mas"
+        "footer";
+        grid-template-columns: 1;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+    header {
+        grid-area: header;
+    }
+    .title {
+        grid-area: proyectos__title
+    }
+    .presentacion {
+        grid-area: presentacion;
+    }
+    .diseño {
+        grid-area: trabajos;
+        padding-top: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .diseño__01 {
+            width: 300px;
+            padding-top: 80px;
+            text-align: center;
+        }
+        .diseño__img {
+            width: 300px;
+        }
+        h4 {
+            padding-top: 15px;
+        }
+    }    
+    .metodologia__mas {
+        grid-area: metodologia__mas;
+        padding-top: 100px;
+        padding-bottom: 200px;
+        text-align: center;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
+    /* vista desktop */
+@media only screen and (min-width: 768px) {
+    .body__proyectos {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "proyectos__title"
+        "presentacion"
+        "trabajos"
+        "metodologia__mas"
+        "footer";
+        grid-template-columns: 1;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+    header {
+        grid-area: header;
+    }
+    .title {
+        grid-area: proyectos__title;
+        font-size: 180px;
+        color: rgba(12, 12, 56, 0.074);
+        margin-top: -140px;
+    }
+    .presentacion {
+        grid-area: presentacion;
+        
+    }
+    
+    .diseño {
+        grid-area: trabajos;
+        padding-top: 100px;
+        padding-left: 60px;
+        padding-right: 60px;
+        height: auto;
+	    width: 100%;
+        display: flex;
+	    flex-direction: row;
+	    justify-content: space-evenly;
+	    flex-wrap: wrap; 
+        .diseño__01 {
+            width: 300px;
+            padding-top: 100px;
+            padding-right: 20px;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        } 
+        .diseño__img {
+            width: 300px;
+        }
+        h4 {
+            padding-top: 15px;
+        }
+    }
+    .metodologia__mas {
+        grid-area: metodologia__mas;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 100px; 
+        padding-bottom: 250px;   
+    }
+    footer {
+        grid-area: footer;
+    }
+}

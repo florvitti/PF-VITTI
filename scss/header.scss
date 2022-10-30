@@ -1,0 +1,103 @@
+/* vista desktop */
+@media only screen and (min-width: 768px) {
+    header {
+        background-color: $background-color-op;
+        box-shadow: $box-shadow;;
+        font-size: $fontsize-m;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 75px;
+        & a {
+            color: $color;
+            text-decoration: none;
+        }
+    }
+    .inicio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .inicio__logo {
+            width: 100px;
+            padding-left: 100px;
+        }
+        .inicio__menu {
+            display: flex;
+            align-items: center;
+            & ul {
+                margin: 0;
+                padding: 22px 0;
+                padding-right: 100px;
+                list-style: none;
+                & li {
+                    display: inline-block;
+                    & a {
+                        display: block;
+                        padding: 5px 10px;
+                        transition: all 0.3s linear;
+                        &:hover, &.active {
+                            color: $colorhover;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    header {
+        background-color: $background-color-op;
+        box-shadow: $box-shadow;;
+        font-size: $fontsize-s;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 110px;
+        & a {
+            color: $color;
+            text-decoration: none;
+        }
+    }
+    .inicio {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 12px;
+        .inicio__logo {
+            display: flex;
+            justify-content: center;  
+        }
+        .inicio__menu {
+                display: flex;
+                justify-content: center;
+            & ul {
+                display: flex;
+                padding-top: 12px;
+                list-style: none;
+                & li {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    & a {
+                        display: block;
+                        transition: all 0.3s linear;
+                        border-top: 3px solid transparent;
+                        &:hover, &.active {
+                            color: $colorhover;
+                            font-weight: 500;
+                            border-top: 3px solid $color-trans;
+                        }
+                    }
+                } 
+                .bi {
+                    display: none;
+                }
+            }   
+        } 
+    }
+}
